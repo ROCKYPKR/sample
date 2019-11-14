@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c22-3j-Hu7">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="1452.1739130434785" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Verification View Controller-->
         <scene sceneID="oLL-8a-mwG">
             <objects>
-                <viewController id="YWt-UL-So8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerificationViewController" id="YWt-UL-So8" customClass="VerificationViewController" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qd5-Sp-kD8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,7 +475,7 @@
                                             <constraint firstAttribute="height" constant="45" id="bAv-z7-akR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
@@ -503,6 +503,9 @@
                                                 <real key="value" value="22.5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionLogin:" destination="sS6-7Z-VQU" eventType="touchUpInside" id="sLC-4e-mQP"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-qe-hpo">
                                         <rect key="frame" x="20" y="216" width="334" height="20.333333333333343"/>
@@ -569,6 +572,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oBO-VA-wzm"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="K9w-EG-1Sz" id="RGz-SX-qEi"/>
+                        <outlet property="userName" destination="UdN-Hh-4RG" id="ZSI-Nr-uNE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4l-iT-ozm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

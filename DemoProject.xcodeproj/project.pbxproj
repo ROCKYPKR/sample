@@ -20,6 +20,7 @@
 		52EFC62D237D283A001B9C46 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFC62C237D283A001B9C46 /* PageContentViewController.swift */; };
 		52EFC62F237D298D001B9C46 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFC62E237D298D001B9C46 /* PageViewController.swift */; };
 		52EFC631237D2F5F001B9C46 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFC630237D2F5F001B9C46 /* CarouselViewController.swift */; };
+		691F84C5237D9F7D00412B00 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F84C4237D9F7D00412B00 /* VerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		52EFC62C237D283A001B9C46 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		52EFC62E237D298D001B9C46 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		52EFC630237D2F5F001B9C46 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		691F84C4237D9F7D00412B00 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				523680B8237D4F8D00A6ED4F /* CardView.swift */,
 				523680BA237D51B300A6ED4F /* FormTextField.swift */,
 				523680BC237D622D00A6ED4F /* LoginViewController.swift */,
+				691F84C4237D9F7D00412B00 /* VerificationViewController.swift */,
 			);
 			path = DemoProject;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				523680BB237D51B300A6ED4F /* FormTextField.swift in Sources */,
 				52EFC631237D2F5F001B9C46 /* CarouselViewController.swift in Sources */,
 				52EFC62F237D298D001B9C46 /* PageViewController.swift in Sources */,
+				691F84C5237D9F7D00412B00 /* VerificationViewController.swift in Sources */,
 				52EFC62D237D283A001B9C46 /* PageContentViewController.swift in Sources */,
 				523680B7237D45EC00A6ED4F /* RegistrationViewController.swift in Sources */,
 				52EFC619237D1C78001B9C46 /* AppDelegate.swift in Sources */,

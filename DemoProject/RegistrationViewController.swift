@@ -54,9 +54,13 @@ class RegistrationViewController: UIViewController {
 
         }else{
             if !validatePassword(password:password.text!, confirmPassword: confirmPassword.text!){
-                 showMessageDialog(message: "Password dont match")
+                 showMessageDialog(message:"Password dont match")
+            }else if !isValidEmail(emailStr:email.text!){
+                showMessageDialog(message:"Please Enter Valid Email")
             }else{
                 //create account
+                let controllerLogin=storyboard?.instantiateViewController(identifier:"VerificationViewController") as! VerificationViewController
+                self.present(controllerLogin, animated: true, completion: nil)
             }
 
         }
@@ -69,6 +73,13 @@ class RegistrationViewController: UIViewController {
 
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+     func isValidEmail(emailStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: emailStr)
     }
 
 
